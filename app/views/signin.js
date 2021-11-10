@@ -10,7 +10,7 @@ function signin({navigation}) {
     return (
         <SafeAreaView style={Global.container}>
             <View style={FormStyle.formCard}>
-                <Text style={FormStyle.formHead}>SIGNUP</Text>
+                <Text style={FormStyle.formHead}>SIGNIN</Text>
                 <Formik
                     initialValues={{ name: '', password: '' }}
                     onSubmit={(values, actions) => {
@@ -35,12 +35,21 @@ function signin({navigation}) {
                             />
                             <Pressable
                                 onPress={() => {navigation.navigate('DashBoard')} }
-                                style={Styles.signBut}>
-                                <Text style={Styles.butText}>SIGNUP</Text>
+                                style={Styles.signBut}
+                            >
+                                <Text style={Styles.butText}>SIGNIN</Text>
                             </Pressable>
                         </View>
                     )}
                 </Formik>
+                <View style={FormStyle.toggleConatainer}>
+                    <Text style={FormStyle.toggleAsk}> Dont Have An Account ?</Text>
+                    <Pressable
+                        onPress={() => {navigation.push('SignUp')}}
+                    >
+                        <Text style={FormStyle.toggleLink}>SignUp</Text>
+                    </Pressable>                  
+                </View>
             </View>
         </SafeAreaView >
     );
