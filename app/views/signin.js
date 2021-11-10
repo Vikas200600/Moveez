@@ -6,7 +6,7 @@ import Global from './../styles/global'
 import Styles from './../styles/styles'
 import FormStyle from './../styles/formStyle'
 
-function signin(props) {
+function signin({navigation}) {
     return (
         <SafeAreaView style={Global.container}>
             <View style={FormStyle.formCard}>
@@ -34,7 +34,7 @@ function signin(props) {
                                 value={props.values.password}
                             />
                             <Pressable
-                                onPress={props.handleSubmit}
+                                onPress={() => {navigation.navigate('DashBoard')} }
                                 style={Styles.signBut}>
                                 <Text style={Styles.butText}>SIGNUP</Text>
                             </Pressable>
