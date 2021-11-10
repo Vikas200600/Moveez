@@ -16,7 +16,7 @@ let styles = StyleSheet.create({
         borderRadius: 5,
         borderRadius: 10,
         alignItems: 'center',
-        marginBottom: 30
+        marginBottom: 20
     },
     butText: {
         color: 'white',

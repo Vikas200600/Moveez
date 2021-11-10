@@ -6,7 +6,7 @@ import Global from './../styles/global';
 import Styles from './../styles/styles';
 import FormStyle from './../styles/formStyle';
 
-function SignUp(props) {
+function SignUp({navigation}) {
     return (
         <SafeAreaView style={Global.container}>
             <View style={FormStyle.formCard}>
@@ -62,6 +62,14 @@ function SignUp(props) {
                         </View>
                     )}
                 </Formik>
+                <View style={FormStyle.toggleConatainer}>
+                    <Text style={FormStyle.toggleAsk}> Already Have An Account ?</Text>
+                    <Pressable
+                        onPress={() => {navigation.push('SignIn')}}
+                    >
+                        <Text style={FormStyle.toggleLink}>SignIn</Text>
+                    </Pressable>                  
+                </View>
             </View>
         </SafeAreaView >
     );
