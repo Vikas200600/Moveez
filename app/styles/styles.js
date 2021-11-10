@@ -2,12 +2,12 @@ import { StyleSheet } from "react-native";
 
 let styles = StyleSheet.create({
     signCard: {
-        alignItems: 'center',
-        gridGap: 15
+        alignItems: 'center'
     },
     signText: {
         fontSize: 24,
-        lineHeight: 30
+        lineHeight: 30,
+        marginBottom: 10
     },
     signBut: {
         backgroundColor: 'blue',
@@ -15,12 +15,13 @@ let styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 5,
         borderRadius: 10,
-        alignItems: 'center'
+        alignItems: 'center',
+        marginBottom: 30
     },
     butText: {
         color: 'white',
         letterSpacing: 1,
-        fontWeight: 'bold',
+        fontWeight: 'bold'
     },
 })
 

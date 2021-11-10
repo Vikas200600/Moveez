@@ -6,8 +6,7 @@ const globalStyle = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         maxWidth: '450',
-        height: '100%',
-        gridGap: 50
+        height: '100%'
     },
     input: {
         fontSize: 20,
@@ -15,8 +14,10 @@ const globalStyle = StyleSheet.create({
         paddingHorizontal: 20,
         minWidth: 300,
         marginBottom: 16,
-        border: '1px solid #03045e',
-        borderRadius: 10
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: 'yellow',
+        borderStyle:  'solid'
     }
 })
 
