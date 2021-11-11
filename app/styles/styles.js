@@ -23,6 +23,24 @@ let styles = StyleSheet.create({
         letterSpacing: 1,
         fontWeight: 'bold'
     },
+    infoCard: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 20
+    },
+    info: {
+        marginLeft: 16
+    },
+    infoHead: {
+        fontSize: 24,
+        fontWeight: 'bold',
+    },
+    infoData: {
+        fontSize: 18,
+        letterSpacing: 1
+    }
+
 })
 
 export default styles;
